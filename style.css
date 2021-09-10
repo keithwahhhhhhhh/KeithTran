@@ -1,3 +1,11 @@
 body {
-    background-color: aqua;
+    background-color:rgb(240,248,255);
+    border: purple solid 5px;
+    background-image: url("https://r1.ilikewallpaper.net/ipad-wallpapers/download/2328/Waiting-Cat-ipad-wallpaper-ilikewallpaper_com.jpg");
 }
+#button {
+    border: black double 5px;
+    padding: 5px;
+    
+}
+
