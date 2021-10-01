@@ -5,6 +5,6 @@ $(function () {
       $(this).load(file)
     })
 
-    document.title = "your site name"
+    document.title = "Mental Health Quiz"
 
   })
