@@ -16,7 +16,11 @@ $(function () {
   const colors = urlParams.getAll('colors')
   const writestuff = urlParams.get('writestuff');
   var output = "Your email is: " + email + " <br> The number you picked is: " + pickanum + "<br> the colors you picked were: " + colors + "<br> and you wrote the following: <br>" + writestuff;
-
+  var test = "you answer is" + email;
   jQuery(document).ready(function() {
     $("#results").html(output); 
+  });
+
+  jQuery(document).ready(function() {
+    $("#answer1").html(test); 
   });
