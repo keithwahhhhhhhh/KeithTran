@@ -23,5 +23,8 @@ img {
 .col-6{
     text-align: center;
 }
+.quiz #Quiz {
+    display: none;
+}
 
 

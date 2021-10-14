@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="page.css">
   <title>Topic: Mental Health </title>
 </head>
-<body class = "home">
+<body class = "quiz home">
   <div data-include="nav"></div>
   <div class="container">
     <h1 class="display-1 text-center">Topic: Mental Health </h1>
@@ -29,43 +29,80 @@
 <br>
 </br>
 <form class="needs-validation" action="Results.html" method="get">
+  
   <div class="form-group">
-    <label for="email">Email address</label>
-    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
-  </div>
-  <div class="form-group">
-    <label for="pickanum">Example select</label>
-    <select class="form-control" id="pickanum" name="pickanum" required>
-      <option selected></option>
+    <label for="number">On a scale of 1 to 10, rate how do you feel on most days.</label>
+    <select class="form-control" id="number" name="number">
+    
       <option>1</option>
       <option>2</option>
       <option>3</option>
       <option>4</option>
       <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
     </select>
   </div>
+  <br> </br>
+
+  <p> Which of the following disorder do you associate with?</p>
   <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="Red" id="redcheck" name="colors">
-    <label class="form-check-label" for="red">
-      Red
-    </label>
-  </div>
-  <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="Green" id="greencheck" name="colors">
-    <label class="form-check-label" for="green">
-      Green
-    </label>
-  </div>
-  <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="Purple" id="purplecheck" name="colors">
-    <label class="form-check-label" for="purple">
-      Purple
+    <input class="form-check-input" type="checkbox" value="Anxiety" id="disorder" name="disorder">
+    <label class="form-check-label" for="disorder">
+      Anxiety
     </label>
   </div>
 
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="Depression" id="Depressioncheck" name="disorder">
+    <label class="form-check-label" for="Depression">
+      Depression
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="Eating disorder" id="eatingcheck" name="disorder">
+    <label class="form-check-label" for="eating">
+      Eating Disorder
+    </label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="Personality disorder" id="personalitycheck" name="disorder">
+    <label class="form-check-label" for="personality">
+      Personality Disorder
+    </label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="trauma disorder" id="traumacheck" name="disorder">
+    <label class="form-check-label" for="trauma">
+      Post traumatic stress disorder 
+    </label>
+  </div>
+  <br> </br>
+  <p> How often do you think about hurting yourself?</p>
+          <label for="everyday">Everyday:</label>
+          <input type="radio" name="hurt" id="everyday" value="everyday">
+
+          <label for="near">Nearly everyday:</label>
+          <input type="radio" name="hurt" id="nearlyeveryday" value="nearly everyday">
+
+          <label for="sometimes">Sometimes:</label>
+          <input type="radio" name="hurt" id="sometimes" value="sometimes">
+
+          <label for="notreally">Not really:</label>
+          <input type="radio" name="hurt" id="notreally" value="notreally">
+
+          <label for="never">Never:</label>
+          <input type="radio" name="hurt" id="never" value="never">
+
+<br> </br>
   <div class="form-group">
-    <label for="writestuff">Example textarea</label>
-    <textarea class="form-control" id="writestuff" name="writestuff" rows="3" required></textarea>
+    <label for="reason">Explain why or why not you did not answer honestly to these questions.</label>
+    <textarea class="form-control" id="reason" name="reason" rows="3" required></textarea>
   </div>
   <a href="Results.html" class="button">
 
@@ -75,9 +112,6 @@
 </form>
 <br>
 </br>
-
-<div id="results"></div>
-
 
    
   <!--Bootstrap and other JS scripts-->

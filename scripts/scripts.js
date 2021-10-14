@@ -5,22 +5,30 @@ $(function () {
       $(this).load(file)
     })
 
-    document.title = "Mental Health Quiz"
+    document.title = "Mental Health Website"
 
   })
 
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
-  const email = urlParams.get('email');
-  const pickanum = urlParams.get('pickanum');
-  const colors = urlParams.getAll('colors')
-  const writestuff = urlParams.get('writestuff');
-  var output = "Your email is: " + email + " <br> The number you picked is: " + pickanum + "<br> the colors you picked were: " + colors + "<br> and you wrote the following: <br>" + writestuff;
-  var test = "you answer is" + email;
+  const number = urlParams.get('number');
+  const disorder = urlParams.get('disorder');
+  const hurt = urlParams.get('hurt');
+  const reasons = urlParams.get('reason');
+  var disorderResult = "You answered: " + disorder;
+  var numResult = "Your number was: "+ number;
+  var hurtResult = "You answered: "+ hurt;
+  var reasonResult = "You answered: "+ reasons;
+  
   jQuery(document).ready(function() {
-    $("#results").html(output); 
+    $("#num").html(numResult); 
   });
-
   jQuery(document).ready(function() {
-    $("#answer1").html(test); 
+    $("#disorder").html(disorderResult); 
+  });
+  jQuery(document).ready(function() {
+    $("#hurts").html(hurtResult); 
+  });
+  jQuery(document).ready(function() {
+    $("#reasons").html(reasonResult); 
   });
