@@ -29,7 +29,9 @@
 <br>
 </br>
 <form class="needs-validation" action="Results.html" method="get">
-  
+  <div class="container">
+    <div class="row border border-success border-4 rounded">
+      <div class="col-12" >
   <div class="form-group">
     <label for="number">On a scale of 1 to 10, rate how do you feel on most days.</label>
     <select class="form-control" id="number" name="number">
@@ -46,8 +48,14 @@
       <option>10</option>
     </select>
   </div>
-  <br> </br>
+</div>
+</div>
+</div>
 
+  <br> </br>
+  <div class="container">
+    <div class="row border border-warning border-4 rounded">
+      <div class="col-12" >
   <p> Which of the following disorder do you associate with?</p>
   <div class="form-check">
     <input class="form-check-input" type="checkbox" value="Anxiety" id="disorder" name="disorder">
@@ -82,7 +90,14 @@
       Post traumatic stress disorder 
     </label>
   </div>
+  </div>
+  </div>
+  </div>
+
   <br> </br>
+  <div class="container">
+    <div class="row border border-danger border-4 rounded">
+      <div class="col-12" >
   <p> How often do you think about hurting yourself?</p>
           <label for="everyday">Everyday:</label>
           <input type="radio" name="hurt" id="everyday" value="everyday">
@@ -98,11 +113,20 @@
 
           <label for="never">Never:</label>
           <input type="radio" name="hurt" id="never" value="never">
+        </div>
+        </div>
+        </div>
 
 <br> </br>
+<div class="container">
+  <div class="row border border-primary border-4 rounded">
+    <div class="col-12" >
   <div class="form-group">
     <label for="reason">Explain why or why not you did not answer honestly to these questions.</label>
     <textarea class="form-control" id="reason" name="reason" rows="3" required></textarea>
+  </div>
+  </div>
+  </div>
   </div>
   <a href="Results.html" class="button">
 
